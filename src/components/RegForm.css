@@ -1,0 +1,54 @@
+.register-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: var(--secondary-bg);
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--accent-color);
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.register-form input {
+    margin-bottom: 12px;
+}
+.disclaimer {
+    font-size: 14px;
+    color: var(--secondary-text);
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.popup-message {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.popup-success {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: var(--success-color);
+}
+
+.popup-error {
+    background-color: rgba(220, 53, 69, 0.1);
+    color: var(--error-color);
+}

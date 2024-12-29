@@ -1,0 +1,37 @@
+.conversation-preview {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.conversation-preview:hover {
+    background-color: #f5f5f5;
+}
+
+.preview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.preview-sender {
+    font-weight: bold;
+    color: #333;
+}
+
+.preview-timestamp {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.preview-content {
+    color: #666;
+    padding-left: 2px;
+}
+
+
+  
+  .inbox-container {
+    animation: pulse 2s ease-in-out infinite;
+  }

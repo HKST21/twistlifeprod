@@ -1,0 +1,109 @@
+:root {
+    --primary-bg: #ffffff;
+    --secondary-bg: #fff5f5;
+    --primary-text: #333333;
+    --secondary-text: #666666;
+    --accent-color: #ff7b7b;
+    --accent-hover: #ff9999;
+    --success-color: #28a745;
+    --error-color: #dc3545;
+    --border-color: #ffdddd;
+    --input-bg: #ffffff;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body, #root {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto; /* Povolí scrollování */
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--primary-text);
+    background-color: var(--primary-bg);
+  }
+  
+  #root {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Změněno z center na flex-start */
+    min-height: 100vh;
+    padding: 20px 0; /* Přidán padding nahoře a dole */
+  }
+  
+  .app-container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(0.85); /* Zmenší celou aplikaci */
+    transform-origin: top center;
+  }
+  
+  button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px; /* Trochu menší padding */
+    font-size: 16px;
+    cursor: pointer;
+    margin: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: var(--input-bg);
+  }
+
+  @keyframes pulse-envelope {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+      text-shadow: 0 0 10px rgba(255, 123, 123, 0.7);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .inbox-button, 
+  .message-button {
+    font-size: 24px;
+    border: none;
+    background-color: var(--accent-color);  /* Přidáno místo background: none */
+    cursor: pointer;
+    color: white;  /* Přidáno pro lepší viditelnost textu */
+    border-radius: 8px;  /* Přidáno pro konzistenci s ostatními tlačítky */
+    padding: 10px 20px;  /* Přidáno pro konzistenci s ostatními tlačítky */
+}
+  
+  /* Animace se spustí pouze když jsou zprávy */
+  .inbox-button.has-messages, 
+  .message-button.has-messages {
+    animation: pulse-envelope 2s ease-in-out infinite;
+  }
+  
+  .inbox-button:hover, 
+  .message-button:hover {
+    animation-play-state: paused;
+  }
