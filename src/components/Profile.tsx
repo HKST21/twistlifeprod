@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import TwistLife from "../class/TwistLifeFeClass";
 import { UserProfile } from '../types/interfaces';
 import "./Profile.css";
+import { BASE_URL } from "../class/TwistLifeFeClass";
 
 export function Profile({ userData, setCompletedUserProfile, onFindFriends, openInbox, messageCount }: { 
     userData: any, 
@@ -75,7 +76,7 @@ export function Profile({ userData, setCompletedUserProfile, onFindFriends, open
                         {profileData.photos.map((photo, index) => (
                             <img 
                                 key={index}
-                                src={`http://localhost:3010/${photo}`}
+                                src={`${BASE_URL}/${photo}`}
                                 alt={`Photo ${index + 1}`}
                                 className="profile-photo"
                             />

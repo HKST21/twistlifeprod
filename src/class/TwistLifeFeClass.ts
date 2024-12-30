@@ -1,4 +1,4 @@
-const BASE_URL = import.meta.env.PROD 
+export const BASE_URL = import.meta.env.PROD 
   ? 'https://twistlife-backend.onrender.com'
   : 'http://localhost:3000';
 import { Message } from "../types/interfaces";
