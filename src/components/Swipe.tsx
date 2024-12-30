@@ -89,7 +89,7 @@ export function Swipe({ openInbox, userData, onMessageSent, messageCount }: { op
                             {meetProfile?.photos.map((photo, index) => (
                                 <img
                                     key={index}
-                                    src={`http://localhost:3010/${photo}`}
+                                    src={photo}
                                     alt={`Photo ${index + 1}`}
                                     className="profile-photo"
                                     style={{ maxWidth: '200px', margin: '10px' }}
