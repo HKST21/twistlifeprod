@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import TwistLife from "../class/TwistLifeFeClass";
 import { UserProfile } from '../types/interfaces';
 import "./Profile.css";
-import { BASE_URL } from "../class/TwistLifeFeClass";
+
 
 export function Profile({ userData, setCompletedUserProfile, onFindFriends, openInbox, messageCount }: { 
     userData: any, 

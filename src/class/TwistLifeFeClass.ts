@@ -6,7 +6,7 @@ import { Message } from "../types/interfaces";
 
 interface User {
     id?: string;
-    email: string;
+    email: string;  
     password: string;
     firstname: string;
     lastname: string;
