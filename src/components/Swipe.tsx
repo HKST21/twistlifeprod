@@ -89,7 +89,7 @@ export function Swipe({ openInbox, userData, onMessageSent, messageCount }: { op
                             {meetProfile?.photos.map((photo, index) => (
                                 <img
                                     key={index}
-                                    src={photo}
+                                    src={`https://twistlife-backend.onrender.com/${photo}`}
                                     alt={`Photo ${index + 1}`}
                                     className="profile-photo"
                                     style={{ maxWidth: '200px', margin: '10px' }}

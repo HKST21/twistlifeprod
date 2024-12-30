@@ -76,7 +76,7 @@ export function Profile({ userData, setCompletedUserProfile, onFindFriends, open
                         {profileData.photos.map((photo, index) => (
                             <img 
                                 key={index}
-                                src={photo}
+                                src={`https://twistlife-backend.onrender.com/${photo}`}
                                 alt={`Photo ${index + 1}`}
                                 className="profile-photo"
                             />
